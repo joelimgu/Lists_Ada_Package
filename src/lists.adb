@@ -8,7 +8,7 @@ package body lists is
    
 procedure Free is new Unchecked_Deallocation(Element,P_List);
 
-   function Create_List(Elements: Tab_Data) return List is
+   function Create_List(Elements: Tab_Of_List_Type) return List is
       L :List := (First_Element => null);
    begin
       for i in Elements'Range loop --add every number of the array into the list
@@ -157,7 +157,7 @@ procedure Free is new Unchecked_Deallocation(Element,P_List);
       for i in 1..Self.Length loop
          rec := aux;
          aux := aux.all.suiv;
-         Delete_Object(erc.all.info);
+         Delete_Object(rec.all.info);
          Free (rec);
       end loop;
    end Empty;

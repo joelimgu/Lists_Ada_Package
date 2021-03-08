@@ -49,8 +49,8 @@ procedure Main is
    end Test_List_Package;
 
 
-   arr : Tab_Data (1..5) := (1,2,3,4,5);
-   arr2 : Tab_Data (1..0);
+   arr : Tab_Of_List_Type (1..5) := (1,2,3,4,5);
+   arr2 : Tab_Of_List_Type (1..0);
    L1: List := Create_List(arr);
    L2: List := L1 + L1;
    Ln: List := Create_List(arr2); --null array
