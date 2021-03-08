@@ -31,7 +31,8 @@ package lists is
    --removes only one instance, it should remove all the instances?????
    procedure Remove_Index(Self: in out List; Index: Integer);
    
-   --procedure Empty(Self: in out List );
+   procedure Empty(Self: in out List );
+   
    --concatenates the lists
    function "+" (L,R: List) return List;
 

@@ -1,9 +1,6 @@
-V "GNAT Lib v2020"
+V "GNAT Lib v9"
 M P W=b
-A -gnatA
-A -mtune=generic
-A -march=x86-64
-P SS ZX
+P ZX
 
 RN
 RV NO_ALLOCATORS
@@ -20,10 +17,10 @@ RV NO_STANDARD_ALLOCATORS_AFTER_ELABORATION
 RV NO_STANDARD_STORAGE_POOLS
 RV NO_DEFAULT_INITIALIZATION
 RV NO_DYNAMIC_SIZED_OBJECTS
-RV NO_IMPLEMENTATION_PRAGMAS
 RV STATIC_DISPATCH_TABLES
+RV SPARK_05
 
-U main%b		main.adb		3c431387 NE OO SU
+U main%b		main.adb		1aaa75b0 NE OO SU
 W ada%s			ada.ads			ada.ali
 Z ada.exceptions%s	a-except.adb		a-except.ali
 Z ada.streams%s		a-stream.adb		a-stream.ali
@@ -43,66 +40,64 @@ Z system.img_int%s	s-imgint.adb		s-imgint.ali
 Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
 Z system.soft_links%s	s-soflin.adb		s-soflin.ali
 Z system.standard_library%s  s-stalib.adb	s-stalib.ali
+Z system.storage_elements%s  s-stoele.adb	s-stoele.ali
 Z system.stream_attributes%s  s-stratt.adb	s-stratt.ali
 Z unchecked_deallocation%s
 
-D ada.ads		20200819050644 76789da1 ada%s
-D a-charac.ads		20200819050642 2d3ec45b ada.characters%s
-D a-chlat1.ads		20200819050642 66457d31 ada.characters.latin_1%s
-D a-except.ads		20200819050644 a7106115 ada.exceptions%s
-D a-finali.ads		20200819050644 bf4f806b ada.finalization%s
-D a-ioexce.ads		20200819050644 e4a01f64 ada.io_exceptions%s
-D a-stream.ads		20200819050644 119b8fb3 ada.streams%s
-D a-string.ads		20200819050644 90ac6797 ada.strings%s
-D a-strmap.ads		20200819050644 e8bb714a ada.strings.maps%s
-D a-strunb.ads		20200819050644 1656705b ada.strings.unbounded%s
-D a-suteio.ads		20200819050644 26d8e9aa ada.strings.unbounded.text_io%s
-D a-tags.ads		20200819050644 edddc8f0 ada.tags%s
-D a-textio.ads		20200819050644 aef4d56d ada.text_io%s
-D a-unccon.ads		20200819050644 0e9b276f ada.unchecked_conversion%s
-D interfac.ads		20200819050646 5ab55268 interfaces%s
-D i-cstrea.ads		20200819050646 e53d8b8e interfaces.c_streams%s
-D lists.ads		20210305160754 e7189a95 lists%s
-D lists.adb		20210305160902 13c7baf1 lists%b
-D main.adb		20210305160334 75af5c7f main%b
-D system.ads		20200819050648 32a08138 system%s
-D s-addima.ads		20200819050646 a1ec9d3a system.address_image%s
-D s-atocou.ads		20200819050646 b45c2d8d system.atomic_counters%s
-D s-conca2.ads		20200819050646 02a0d7d0 system.concat_2%s
-D s-crtl.ads		20200819050646 0ebbdb71 system.crtl%s
-D s-exctab.ads		20200819050646 54135002 system.exception_table%s
-D s-ficobl.ads		20200819050646 078245e4 system.file_control_block%s
-D s-finmas.ads		20200819050646 7811a767 system.finalization_masters%s
-D s-finroo.ads		20200819050646 4ff27390 system.finalization_root%s
-D s-imgboo.ads		20200819050646 f5d971eb system.img_bool%s
-D s-imgint.ads		20200819050646 02dbe0c2 system.img_int%s
-D s-memory.ads		20200819050646 597d6634 system.memory%s
-D s-parame.ads		20200819050648 4752c4cb system.parameters%s
-D s-secsta.ads		20200819050648 9b3ab94b system.secondary_stack%s
-D s-soflin.ads		20200819050648 a7318a92 system.soft_links%s
-D s-stache.ads		20200819050648 a37c21ec system.stack_checking%s
-D s-stalib.ads		20200819050648 6b7a13f2 system.standard_library%s
-D s-stalib.adb		20200819050648 f2fe2716 system.standard_library%b
-D s-stoele.ads		20200819050648 2dc34a04 system.storage_elements%s
-D s-stoele.adb		20200819050648 ed88f8fb system.storage_elements%b
-D s-stopoo.ads		20200819050648 e9fa2dd8 system.storage_pools%s
-D s-stposu.ads		20200819050648 e251976f system.storage_pools.subpools%s
-D s-stratt.ads		20200819050648 9a2744e9 system.stream_attributes%s
-D s-traent.ads		20200819050648 005bf670 system.traceback_entries%s
-D s-unstyp.ads		20200819050648 5ecf7212 system.unsigned_types%s
-D s-wchcon.ads		20200819050648 1b7d22d2 system.wch_con%s
-D unchdeal.ads		20200819050648 214516a4 unchecked_deallocation%s
-G a e
-G c Z b b [main standard 4 11 none]
-G r i none [main standard 4 11 none] [lists standard 7 9 none]
+D ada.ads		20200312110721 76789da1 ada%s
+D a-charac.ads		20200312110721 2d3ec45b ada.characters%s
+D a-chlat1.ads		20200312110721 66457d31 ada.characters.latin_1%s
+D a-except.ads		20200312110721 291912d5 ada.exceptions%s
+D a-finali.ads		20200312110721 bf4f806b ada.finalization%s
+D a-ioexce.ads		20200312110721 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20200312110721 119b8fb3 ada.streams%s
+D a-string.ads		20200312110721 90ac6797 ada.strings%s
+D a-strmap.ads		20200312110721 e8bb714a ada.strings.maps%s
+D a-strunb.ads		20200312110721 8098c91f ada.strings.unbounded%s
+D a-suteio.ads		20200312110721 26d8e9aa ada.strings.unbounded.text_io%s
+D a-tags.ads		20200312110721 491b781d ada.tags%s
+D a-textio.ads		20200312110721 881db35a ada.text_io%s
+D a-unccon.ads		20200312110721 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		20200312110721 5ab55268 interfaces%s
+D i-cstrea.ads		20200312110721 e53d8b8e interfaces.c_streams%s
+D lists.ads		20210308142028 e7189a95 lists%s
+D lists.adb		20210308060938 13c7baf1 lists%b
+D main.adb		20210305152212 75af5c7f main%b
+D system.ads		20200312110721 4635ec04 system%s
+D s-addima.ads		20200312110721 a1ec9d3a system.address_image%s
+D s-atocou.ads		20200312110721 b45c2d8d system.atomic_counters%s
+D s-conca2.ads		20200312110721 02a0d7d0 system.concat_2%s
+D s-crtl.ads		20200312110721 0ebbdb71 system.crtl%s
+D s-exctab.ads		20200312110721 54135002 system.exception_table%s
+D s-ficobl.ads		20200312110721 078245e4 system.file_control_block%s
+D s-finmas.ads		20200312110721 7811a767 system.finalization_masters%s
+D s-finroo.ads		20200312110721 4ff27390 system.finalization_root%s
+D s-imgboo.ads		20200312110721 f5d971eb system.img_bool%s
+D s-imgint.ads		20200312110721 02dbe0c2 system.img_int%s
+D s-memory.ads		20200312110721 597d6634 system.memory%s
+D s-parame.ads		20200312110721 48ec542b system.parameters%s
+D s-secsta.ads		20200312110721 20bbe636 system.secondary_stack%s
+D s-soflin.ads		20200312110721 a7318a92 system.soft_links%s
+D s-stache.ads		20200312110721 a37c21ec system.stack_checking%s
+D s-stalib.ads		20200312110721 09bd3940 system.standard_library%s
+D s-stalib.adb		20200312110721 f2fe2716 system.standard_library%b
+D s-stoele.ads		20200312110721 2dc34a04 system.storage_elements%s
+D s-stoele.adb		20200312110721 ed88f8fb system.storage_elements%b
+D s-stopoo.ads		20200312110721 b16154c2 system.storage_pools%s
+D s-stposu.ads		20200312110721 97a6219c system.storage_pools.subpools%s
+D s-stratt.ads		20200312110721 aedef97e system.stream_attributes%s
+D s-traent.ads		20200312110721 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20200312110721 34867c83 system.unsigned_types%s
+D s-wchcon.ads		20200312110721 1b7d22d2 system.wch_con%s
+D unchdeal.ads		20200312110721 214516a4 unchecked_deallocation%s
 X 1 ada.ads
 16K9*Ada 20e8 19|2r6 2r23
 X 13 a-textio.ads
-57K13*Text_IO 727e16 19|2w10 2r27
-508U14*Put_Line 19|16s7 17s7 18s7 19s7 21s10 25s13 28s10 31s13 34s7 39s13
+49K13*Text_IO 471e16 19|2w10 2r27
+263U14*Put_Line 19|16s7 17s7 18s7 19s7 21s10 25s13 28s10 31s13 34s7 39s13
 . 42s7 44s7 46s7 48s7
 X 17 lists.ads
-7k9*lists 54e10 19|1w6 10r32
+7k9*lists 55e10 19|1w6 10r32
 10X4 Get_Index_Value_Outside_the_list 19|24r15[10] 38r18[10]
 11X4 Get_Index_value_negative_not_implemented_yet 19|30r18[10]
 12R9 List 19|14r42[10] 54r8[10] 55r8[10] 56r8[10]
@@ -119,8 +114,8 @@ X 17 lists.ads
 27i53 New_Value{integer} 19|36r28[10]
 29U14 Remove_Element 19|43s10[10]
 32U14 Remove_Index 19|47s10[10]
-35V14 "+"{12R9[19|10]} 19|45s16[10] 55s19[10]
-38V14 "="{boolean} 19|19s33[10]
+36V14 "+"{12R9[19|10]} 19|45s16[10] 55s19[10]
+39V14 "="{boolean} 19|19s33[10]
 X 19 main.adb
 4U11*Main 4b11 61l5 61t9
 5U14 del_int 5b14 5>22 8l8 8t15 10r64

@@ -149,6 +149,20 @@ procedure Free is new Unchecked_Deallocation(Element,P_List);
    end get_pointer;
 
 
+   procedure Empty(Self: in out List) is
+   --empties all the list and frees the memory mostly used to instance in a list wich contains lists
+   rec : P_List := null;
+   aux : P_List := Self.First_Element;
+   begin
+      for i in 1..Self.Length loop
+         rec := aux;
+         aux := aux.all.suiv;
+         Delete_Object(erc.all.info);
+         Free (rec);
+      end loop;
+   end Empty;
+
+
    function "+"(L,R : List) return List is
       --appends the second list to the first and returns the hole list
       res: List := (First_Element => null);
@@ -199,5 +213,6 @@ procedure Free is new Unchecked_Deallocation(Element,P_List);
       
       return Index;
    end Index;
+
 
 end lists;

@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<Locations >
+  <Project>
+    <vfs_file>C:\Users\joeli\OneDrive\Documents_Me\Insa\2A\Algo\S2\Lists_Ada\Lists_Ada.gpr</vfs_file>
+    <file_marker column=" 31" line=" 21" >
+      <vfs_project>C:\Users\joeli\OneDrive\Documents_Me\Insa\2A\Algo\S2\Lists_Ada\Lists_Ada.gpr</vfs_project>
+      <vfs_file>C:\Users\joeli\OneDrive\Documents_Me\Insa\2A\Algo\S2\Lists_Ada\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 22" line=" 7" >
+      <vfs_project>C:\Users\joeli\OneDrive\Documents_Me\Insa\2A\Algo\S2\Lists_Ada\Lists_Ada.gpr</vfs_project>
+      <vfs_file>C:\Users\joeli\OneDrive\Documents_Me\Insa\2A\Algo\S2\Lists_Ada\src\lists.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 30" line=" 4" >
+      <vfs_project>C:\Users\joeli\OneDrive\Documents_Me\Insa\2A\Algo\S2\Lists_Ada\Lists_Ada.gpr</vfs_project>
+      <vfs_file>C:\Users\joeli\OneDrive\Documents_Me\Insa\2A\Algo\S2\Lists_Ada\src\generic_lists.adb</vfs_file>
+    </file_marker>
+    <file_marker current="true" column=" 22" line=" 7" >
+      <vfs_project>C:\Users\joeli\OneDrive\Documents_Me\Insa\2A\Algo\S2\Lists_Ada\Lists_Ada.gpr</vfs_project>
+      <vfs_file>C:\Users\joeli\OneDrive\Documents_Me\Insa\2A\Algo\S2\Lists_Ada\src\lists.adb</vfs_file>
+    </file_marker>
+  </Project>
+</Locations>

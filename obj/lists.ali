@@ -1,8 +1,5 @@
-V "GNAT Lib v2020"
-A -gnatA
-A -mtune=generic
-A -march=x86-64
-P SS ZX
+V "GNAT Lib v9"
+P ZX
 
 RN
 RV NO_ALLOCATORS
@@ -15,9 +12,9 @@ RV NO_STANDARD_STORAGE_POOLS
 RV NO_UNCHECKED_DEALLOCATION
 RV NO_DEFAULT_INITIALIZATION
 RV NO_DYNAMIC_SIZED_OBJECTS
-RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
 
-U lists%b		lists.adb		4be07a5c NE OO PK GE IL
+U lists%b		lists.adb		fbc7a52f NE OO PK GE IL
 W ada%s			ada.ads			ada.ali
 W ada.strings%s		a-string.ads		a-string.ali
 W ada.strings.unbounded%s  a-strunb.adb		a-strunb.ali
@@ -27,63 +24,61 @@ W unchecked_deallocation%s
 
 U lists%s		lists.ads		e7189a95 BN EE NE OO PK GE
 
-D ada.ads		20200819050644 76789da1 ada%s
-D a-charac.ads		20200819050642 2d3ec45b ada.characters%s
-D a-chlat1.ads		20200819050642 66457d31 ada.characters.latin_1%s
-D a-except.ads		20200819050644 a7106115 ada.exceptions%s
-D a-finali.ads		20200819050644 bf4f806b ada.finalization%s
-D a-ioexce.ads		20200819050644 e4a01f64 ada.io_exceptions%s
-D a-stream.ads		20200819050644 119b8fb3 ada.streams%s
-D a-string.ads		20200819050644 90ac6797 ada.strings%s
-D a-strmap.ads		20200819050644 e8bb714a ada.strings.maps%s
-D a-strunb.ads		20200819050644 1656705b ada.strings.unbounded%s
-D a-suteio.ads		20200819050644 26d8e9aa ada.strings.unbounded.text_io%s
-D a-tags.ads		20200819050644 edddc8f0 ada.tags%s
-D a-textio.ads		20200819050644 aef4d56d ada.text_io%s
-D a-unccon.ads		20200819050644 0e9b276f ada.unchecked_conversion%s
-D interfac.ads		20200819050646 5ab55268 interfaces%s
-D i-cstrea.ads		20200819050646 e53d8b8e interfaces.c_streams%s
-D lists.ads		20210305160754 e7189a95 lists%s
-D lists.adb		20210305160902 13c7baf1 lists%b
-D system.ads		20200819050648 32a08138 system%s
-D s-atocou.ads		20200819050646 b45c2d8d system.atomic_counters%s
-D s-crtl.ads		20200819050646 0ebbdb71 system.crtl%s
-D s-exctab.ads		20200819050646 54135002 system.exception_table%s
-D s-ficobl.ads		20200819050646 078245e4 system.file_control_block%s
-D s-finmas.ads		20200819050646 7811a767 system.finalization_masters%s
-D s-finroo.ads		20200819050646 4ff27390 system.finalization_root%s
-D s-parame.ads		20200819050648 4752c4cb system.parameters%s
-D s-secsta.ads		20200819050648 9b3ab94b system.secondary_stack%s
-D s-soflin.ads		20200819050648 a7318a92 system.soft_links%s
-D s-stache.ads		20200819050648 a37c21ec system.stack_checking%s
-D s-stalib.ads		20200819050648 6b7a13f2 system.standard_library%s
-D s-stoele.ads		20200819050648 2dc34a04 system.storage_elements%s
-D s-stopoo.ads		20200819050648 e9fa2dd8 system.storage_pools%s
-D s-stposu.ads		20200819050648 e251976f system.storage_pools.subpools%s
-D s-stratt.ads		20200819050648 9a2744e9 system.stream_attributes%s
-D s-traent.ads		20200819050648 005bf670 system.traceback_entries%s
-D s-unstyp.ads		20200819050648 5ecf7212 system.unsigned_types%s
-D s-wchcon.ads		20200819050648 1b7d22d2 system.wch_con%s
-D unchdeal.ads		20200819050648 214516a4 unchecked_deallocation%s
-G a e
-G c Z s b [lists standard 7 9 none]
+D ada.ads		20200312110721 76789da1 ada%s
+D a-charac.ads		20200312110721 2d3ec45b ada.characters%s
+D a-chlat1.ads		20200312110721 66457d31 ada.characters.latin_1%s
+D a-except.ads		20200312110721 291912d5 ada.exceptions%s
+D a-finali.ads		20200312110721 bf4f806b ada.finalization%s
+D a-ioexce.ads		20200312110721 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20200312110721 119b8fb3 ada.streams%s
+D a-string.ads		20200312110721 90ac6797 ada.strings%s
+D a-strmap.ads		20200312110721 e8bb714a ada.strings.maps%s
+D a-strunb.ads		20200312110721 8098c91f ada.strings.unbounded%s
+D a-suteio.ads		20200312110721 26d8e9aa ada.strings.unbounded.text_io%s
+D a-tags.ads		20200312110721 491b781d ada.tags%s
+D a-textio.ads		20200312110721 881db35a ada.text_io%s
+D a-unccon.ads		20200312110721 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		20200312110721 5ab55268 interfaces%s
+D i-cstrea.ads		20200312110721 e53d8b8e interfaces.c_streams%s
+D lists.ads		20210308142028 e7189a95 lists%s
+D lists.adb		20210308060938 13c7baf1 lists%b
+D system.ads		20200312110721 4635ec04 system%s
+D s-atocou.ads		20200312110721 b45c2d8d system.atomic_counters%s
+D s-crtl.ads		20200312110721 0ebbdb71 system.crtl%s
+D s-exctab.ads		20200312110721 54135002 system.exception_table%s
+D s-ficobl.ads		20200312110721 078245e4 system.file_control_block%s
+D s-finmas.ads		20200312110721 7811a767 system.finalization_masters%s
+D s-finroo.ads		20200312110721 4ff27390 system.finalization_root%s
+D s-parame.ads		20200312110721 48ec542b system.parameters%s
+D s-secsta.ads		20200312110721 20bbe636 system.secondary_stack%s
+D s-soflin.ads		20200312110721 a7318a92 system.soft_links%s
+D s-stache.ads		20200312110721 a37c21ec system.stack_checking%s
+D s-stalib.ads		20200312110721 09bd3940 system.standard_library%s
+D s-stoele.ads		20200312110721 2dc34a04 system.storage_elements%s
+D s-stopoo.ads		20200312110721 b16154c2 system.storage_pools%s
+D s-stposu.ads		20200312110721 97a6219c system.storage_pools.subpools%s
+D s-stratt.ads		20200312110721 aedef97e system.stream_attributes%s
+D s-traent.ads		20200312110721 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20200312110721 34867c83 system.unsigned_types%s
+D s-wchcon.ads		20200312110721 1b7d22d2 system.wch_con%s
+D unchdeal.ads		20200312110721 214516a4 unchecked_deallocation%s
 X 1 ada.ads
 16K9*Ada 20e8 18|1r6 1r23 2r6 2r33 3r6 3r41
 X 8 a-string.ads
 16K13*Strings 35e16 18|2r10 2r37 3r10 3r45
 X 10 a-strunb.ads
-82K21*Unbounded 758e26 18|2w18 2r45 3r18 3r53
-87R9*Unbounded_String<5|43R9> 741e14 18|62r12
-103V13*To_Unbounded_String{87R9} 18|65s14 68s26 71s23
-116V13*To_String{string} 18|75s14
-151V14*"&"{87R9} 18|68s24 71s21
-159V14*"&"{87R9} 18|74s18
+76K21*Unbounded 491e26 18|2w18 2r45 3r18 3r53
+79R9*Unbounded_String<5|43R9> 474e14 18|62r12
+94V13*To_Unbounded_String{79R9} 18|65s14 68s26 71s23
+100V13*To_String{string} 18|75s14
+119V14*"&"{79R9} 18|68s24 71s21
+123V14*"&"{79R9} 18|74s18
 X 11 a-suteio.ads
 39K31*Text_IO 61e34 18|3w28 3r63
 X 13 a-textio.ads
-57K13*Text_IO 727e16 18|1w10 1r27
+49K13*Text_IO 471e16 18|1w10 1r27
 X 17 lists.ads
-3+9 T_Data 4r34 5r27 6r41 13r49 17r45 21r54 23r44 27r64 29r57 45r13 18|21r46
+3+9 T_Data 4r34 5r27 6r41 13r49 17r45 21r54 23r44 27r64 29r57 46r13 18|21r46
 . 54r54 79r63 85r57 188r44
 4V18 Data_Image{string} 4>29 18|68s46 71s43
 4*29 Data{3+9}
@@ -92,13 +87,13 @@ X 17 lists.ads
 5*24 R{3+9}
 6U19 Delete_Object 6>33 18|117s10 122s10 129s10
 6*33 Object{3+9}
-7k9*lists 3z9 4z18 5z19 6z19 42E9 54l5 54e10 18|7b14 205l5 205t10
+7k9*lists 3z9 4z18 5z19 6z19 43E9 55l5 55e10 18|7b14 203l5 203t10
 9X4*Element_not_in_the_list 18|89r16 197r16
 10X4*Get_Index_Value_Outside_the_list 18|115r16 140r16
 11X4*Get_Index_value_negative_not_implemented_yet 18|142r16
 12R9*List 15p13 15r52 17p14 17r33 19p13 19r28 21p13 21r25 23p13 23r28 25p13
-. 25r32 27p14 27r30 29p14 29r42 32p14 32r40 35p14 35r23 35r36 38p14 38r23
-. 49c9 51e14 53p13 53r34 18|11r52 12r10 21r34 39r28 54r25 60r32 79r30 85r42
+. 25r32 27p14 27r30 29p14 29r42 32p14 32r40 36p14 36r23 36r36 39p14 39r23
+. 50c9 52e14 54p13 54r34 18|11r52 12r10 21r34 39r28 54r25 60r32 79r30 85r42
 . 110r40 136r34 152r23 152r36 154r12 169r22 188r28
 13A9*Tab_Data(3+9)<integer> 15r35 18|11r35
 15V13*Create_List{12R9} 15>25 18|11b13 18l8 18t19
@@ -127,53 +122,53 @@ X 17 lists.ads
 32U14*Remove_Index 32=27 32>46 18|110b14 133l8 133t20
 32r27 Self{12R9} 18|110b27 111r23 114r32 118m10 120r21 121r17 126r17
 32i46 Index{integer} 18|110b46 114r24 116r13 120r13 121r43 126r34
-35V14*"+"{12R9} 35>18 35>20 18|152b14 166l9 166t11
-35r18 L{12R9} 18|152b17 155r22 158r19 159r21
-35r20 R{12R9} 18|152b19 162r19 163r21
-38V14*"="{boolean} 38>18 38>20 18|169b14 185l9 185t11
-38r18 L{12R9} 18|169b17 171r22 175r10
-38r20 R{12R9} 18|169b19 172r23 175r21
-42R9 Element 43r26 44c9 47e14 18|9r46 25r36 32r29
-43P9 P_List(42R9) 46r13 50r22 53r63 18|9r54 22r12 41r12 61r12 86r19 111r13
+36V14*"+"{12R9} 36>18 36>20 18|152b14 166l9 166t11
+36r18 L{12R9} 18|152b17 155r22 158r19 159r21
+36r20 R{12R9} 18|152b19 162r19 163r21
+39V14*"="{boolean} 39>18 39>20 18|169b14 185l9 185t11
+39r18 L{12R9} 18|169b17 171r22 175r10
+39r20 R{12R9} 18|169b19 172r23 175r21
+43R9 Element 44r26 45c9 48e14 18|9r46 25r36 32r29
+44P9 P_List(43R9) 47r13 51r22 54r63 18|9r54 22r12 41r12 61r12 86r19 111r13
 . 112r13 136r63 137r10 155r12 171r12 172r13 189r12
-45*7 info{3+9} 18|25m45 32m38 56r51 68r65 71r62 81m44 90r36 97r45 117r32
+46*7 info{3+9} 18|25m45 32m38 56r51 68r65 71r62 81m44 90r36 97r45 117r32
 . 122r41 129r32 178r29 178r45 192r42
-46p7 suiv{43P9} 18|26m41 28r24 29r28 32m17 33m38 45r24 46r27 67r24 69r28
+47p7 suiv{44P9} 18|26m41 28r24 29r28 32m17 33m38 45r24 46r27 67r24 69r28
 . 92r55 96r38 99r27 103m21 103r36 118r40 122r32 123m23 124m18 127r25 128m18
 . 128r34 146r24 179r30 180r30 193r25
-50p7 First_Element{43P9} 18|12m19 22r27 25m15 41r27 61r27 88r15 90r18 91r21
+51p7 First_Element{44P9} 18|12m19 22r27 25m15 41r27 61r27 88r15 90r18 91r21
 . 92m15 92r37 95r21 96r20 111r28 118m15 137r25 154m21 155r24 171r24 172r25
 . 189r27
-53V13 get_pointer{43P9} 53>25 53>40 18|56s19 81s12 121s22 126s22 136b13 149l8
+54V13 get_pointer{44P9} 54>25 54>40 18|56s19 81s12 121s22 126s22 136b13 149l8
 . 149t19
-53r25 Self{12R9} 18|136b25 137r20 139r18
-53i40 Index{integer} 18|56r31 81r24 121r34 136b40 139r10 141r13 145r19
+54r25 Self{12R9} 18|136b25 137r20 139r18
+54i40 Index{integer} 18|56r31 81r24 121r34 136b40 139r10 141r13 145r19
 X 18 lists.adb
 9U11 Free[38|20] 93s10 104s13 119s10 123s10 130s10
 12r7 L{17|12R9} 15m10 15r10 17r14
 14i11 i{integer} 15r28
-22p7 aux{17|43P9} 24r10 28r16 29m13 29r20 32r9
+22p7 aux{17|44P9} 24r10 28r16 29m13 29r20 32r9
 40i7 len{natural} 44m10 44r17 47m13 47r20 50r14
-41p7 aux{17|43P9} 43r10 45r16 46m13 46r19
-61p7 aux{17|43P9} 66r10 67r16 68r57 69m13 69r20 71r54
-62r7 img{10|87R9} 65m7 68m13 68r20 71m10 71r17 74m7 74r14 75r24
+41p7 aux{17|44P9} 43r10 45r16 46m13 46r19
+61p7 aux{17|44P9} 66r10 67r16 68r57 69m13 69r20 71r54
+62r7 img{10|79R9} 65m7 68m13 68r20 71m10 71r17 74m7 74r14 75r24
 63i7 index{integer}
-86p4 pre{17|43P9} 95m10 98m13 103r13
-86p9 aux{17|43P9} 96m10 97r16 97r37 98r19 99m13 99r19 101r13 102r20 103r28
-86p14 rec{17|43P9} 91m10 93m15 93r15 102m13 104m18 104r18
-111p7 aux{17|43P9} 114r10 117r24 118r32 119m15 119r15 121m10 122r24 123r15
+86p4 pre{17|44P9} 95m10 98m13 103r13
+86p9 aux{17|44P9} 96m10 97r16 97r37 98r19 99m13 99r19 101r13 102r20 103r28
+86p14 rec{17|44P9} 91m10 93m15 93r15 102m13 104m18 104r18
+111p7 aux{17|44P9} 114r10 117r24 118r32 119m15 119r15 121m10 122r24 123r15
 . 124r10 126m10 127r17 128r10
-112p7 rec{17|43P9} 127m10 128r26 129r24 130m15 130r15
-137p4 aux{17|43P9} 146m10 146r16 148r14
+112p7 rec{17|44P9} 127m10 128r26 129r24 130m15 130r15
+137p4 aux{17|44P9} 146m10 146r16 148r14
 145i11 i{integer}
 154r7 res{17|12R9} 159m10 159r10 163m10 163r10 165r14
-155p7 aux{17|43P9}
+155p7 aux{17|44P9}
 158i11 i{integer} 159r27
 162i11 i{integer} 163r27
 170b7 res{boolean} 176m10 177r16 178m13 184r14
-171p7 auxL{17|43P9} 177r24 178r20 179m13 179r21
-172p7 auxR{17|43P9} 178r36 180m13 180r21
-189p7 aux{17|43P9} 192r13 192r34 193m10 193r17 196r10
+171p7 auxL{17|44P9} 177r24 178r20 179m13 179r21
+172p7 auxR{17|44P9} 178r36 180m13 180r21
+189p7 aux{17|44P9} 192r13 192r34 193m10 193r17 196r10
 190i7 Index{integer} 194m10 194r19 200r14
 X 38 unchdeal.ads
 20u11*Unchecked_Deallocation 18|4w6 9r23
