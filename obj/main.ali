@@ -1,0 +1,146 @@
+V "GNAT Lib v2020"
+M P W=b
+A -gnatA
+A -mtune=generic
+A -march=x86-64
+P SS ZX
+
+RN
+RV NO_ALLOCATORS
+RV NO_DIRECT_BOOLEAN_OPERATORS
+RV NO_DISPATCHING_CALLS
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTIONS
+RV NO_IO
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_LOCAL_ALLOCATORS
+RV NO_NESTED_FINALIZATION
+RV NO_SECONDARY_STACK
+RV NO_STANDARD_ALLOCATORS_AFTER_ELABORATION
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DEFAULT_INITIALIZATION
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV STATIC_DISPATCH_TABLES
+
+U main%b		main.adb		3c431387 NE OO SU
+W ada%s			ada.ads			ada.ali
+Z ada.exceptions%s	a-except.adb		a-except.ali
+Z ada.streams%s		a-stream.adb		a-stream.ali
+W ada.strings%s		a-string.ads		a-string.ali
+W ada.strings.unbounded%s  a-strunb.adb		a-strunb.ali
+Z ada.strings.unbounded.text_io%s  a-suteio.adb	a-suteio.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+Z interfaces%s		interfac.ads		interfac.ali
+W lists%s		lists.adb		lists.ali
+Z system%s		system.ads		system.ali
+Z system.address_image%s  s-addima.adb		s-addima.ali
+Z system.concat_2%s	s-conca2.adb		s-conca2.ali
+Z system.exception_table%s  s-exctab.adb	s-exctab.ali
+Z system.img_bool%s	s-imgboo.adb		s-imgboo.ali
+Z system.img_int%s	s-imgint.adb		s-imgint.ali
+Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+Z system.soft_links%s	s-soflin.adb		s-soflin.ali
+Z system.standard_library%s  s-stalib.adb	s-stalib.ali
+Z system.stream_attributes%s  s-stratt.adb	s-stratt.ali
+Z unchecked_deallocation%s
+
+D ada.ads		20200819050644 76789da1 ada%s
+D a-charac.ads		20200819050642 2d3ec45b ada.characters%s
+D a-chlat1.ads		20200819050642 66457d31 ada.characters.latin_1%s
+D a-except.ads		20200819050644 a7106115 ada.exceptions%s
+D a-finali.ads		20200819050644 bf4f806b ada.finalization%s
+D a-ioexce.ads		20200819050644 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20200819050644 119b8fb3 ada.streams%s
+D a-string.ads		20200819050644 90ac6797 ada.strings%s
+D a-strmap.ads		20200819050644 e8bb714a ada.strings.maps%s
+D a-strunb.ads		20200819050644 1656705b ada.strings.unbounded%s
+D a-suteio.ads		20200819050644 26d8e9aa ada.strings.unbounded.text_io%s
+D a-tags.ads		20200819050644 edddc8f0 ada.tags%s
+D a-textio.ads		20200819050644 aef4d56d ada.text_io%s
+D a-unccon.ads		20200819050644 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		20200819050646 5ab55268 interfaces%s
+D i-cstrea.ads		20200819050646 e53d8b8e interfaces.c_streams%s
+D lists.ads		20210305160754 e7189a95 lists%s
+D lists.adb		20210305160902 13c7baf1 lists%b
+D main.adb		20210305160334 75af5c7f main%b
+D system.ads		20200819050648 32a08138 system%s
+D s-addima.ads		20200819050646 a1ec9d3a system.address_image%s
+D s-atocou.ads		20200819050646 b45c2d8d system.atomic_counters%s
+D s-conca2.ads		20200819050646 02a0d7d0 system.concat_2%s
+D s-crtl.ads		20200819050646 0ebbdb71 system.crtl%s
+D s-exctab.ads		20200819050646 54135002 system.exception_table%s
+D s-ficobl.ads		20200819050646 078245e4 system.file_control_block%s
+D s-finmas.ads		20200819050646 7811a767 system.finalization_masters%s
+D s-finroo.ads		20200819050646 4ff27390 system.finalization_root%s
+D s-imgboo.ads		20200819050646 f5d971eb system.img_bool%s
+D s-imgint.ads		20200819050646 02dbe0c2 system.img_int%s
+D s-memory.ads		20200819050646 597d6634 system.memory%s
+D s-parame.ads		20200819050648 4752c4cb system.parameters%s
+D s-secsta.ads		20200819050648 9b3ab94b system.secondary_stack%s
+D s-soflin.ads		20200819050648 a7318a92 system.soft_links%s
+D s-stache.ads		20200819050648 a37c21ec system.stack_checking%s
+D s-stalib.ads		20200819050648 6b7a13f2 system.standard_library%s
+D s-stalib.adb		20200819050648 f2fe2716 system.standard_library%b
+D s-stoele.ads		20200819050648 2dc34a04 system.storage_elements%s
+D s-stoele.adb		20200819050648 ed88f8fb system.storage_elements%b
+D s-stopoo.ads		20200819050648 e9fa2dd8 system.storage_pools%s
+D s-stposu.ads		20200819050648 e251976f system.storage_pools.subpools%s
+D s-stratt.ads		20200819050648 9a2744e9 system.stream_attributes%s
+D s-traent.ads		20200819050648 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20200819050648 5ecf7212 system.unsigned_types%s
+D s-wchcon.ads		20200819050648 1b7d22d2 system.wch_con%s
+D unchdeal.ads		20200819050648 214516a4 unchecked_deallocation%s
+G a e
+G c Z b b [main standard 4 11 none]
+G r i none [main standard 4 11 none] [lists standard 7 9 none]
+X 1 ada.ads
+16K9*Ada 20e8 19|2r6 2r23
+X 13 a-textio.ads
+57K13*Text_IO 727e16 19|2w10 2r27
+508U14*Put_Line 19|16s7 17s7 18s7 19s7 21s10 25s13 28s10 31s13 34s7 39s13
+. 42s7 44s7 46s7 48s7
+X 17 lists.ads
+7k9*lists 54e10 19|1w6 10r32
+10X4 Get_Index_Value_Outside_the_list 19|24r15[10] 38r18[10]
+11X4 Get_Index_value_negative_not_implemented_yet 19|30r18[10]
+12R9 List 19|14r42[10] 54r8[10] 55r8[10] 56r8[10]
+13A9 Tab_Data(integer)<integer> 19|52r10[10] 53r11[10]
+15V13 Create_List{12R9[19|10]} 19|54s16[10] 56s16[10]
+17U14 Append 19|33s10[10]
+19V13 Length{natural} 19|18s46[10]
+21V13 get{integer} 19|21s55[10] 28s56[10]
+23V13 Index{integer} 19|17s33[10]
+25V13 Image{string} 19|16s31[10] 34s19[10] 42s59[10] 44s51[10] 46s40[10]
+. 48s44[10]
+27U14 Set 19|36s13[10]
+27i36 Index{integer} 19|36r17[10]
+27i53 New_Value{integer} 19|36r28[10]
+29U14 Remove_Element 19|43s10[10]
+32U14 Remove_Index 19|47s10[10]
+35V14 "+"{12R9[19|10]} 19|45s16[10] 55s19[10]
+38V14 "="{boolean} 19|19s33[10]
+X 19 main.adb
+4U11*Main 4b11 61l5 61t9
+5U14 del_int 5b14 5>22 8l8 8t15 10r64
+5i22 obj{integer}
+10K12 Integer_List[17|7] 11r8
+14U14 Test_List_Package 14b14 14=32 49l8 49t25 59s4 60s4
+14r32 L1{17|12R9[10]} 16m28 16r28 17r30 18r43 19r30 19r35 21r52 28r53 33m7
+. 33r7 34m16 34r16 36m10 36r10 42m56 42r56 43m7 43r7 44m48 44r48 45m7 45r13
+. 45r18 46m37 46r37 47m7 47r7 48m41 48r41 59r22 60r22
+52a4 arr{17|13A9[10]} 54r28
+53a4 arr2{17|13A9[10]} 56r28
+54r4 L1{17|12R9[10]} 55r16 55r21 59m28 59r28
+55r4 L2{17|12R9[10]}
+56r4 Ln{17|12R9[10]} 60m28 60r28
+X 20 system.ads
+67M9*Address
+X 31 s-memory.ads
+53V13*Alloc{20|67M9} 103i<c,__gnat_malloc>22
+68U14*Free 104i<c,__gnat_free>22
+76V13*Realloc{20|67M9} 105i<c,__gnat_realloc>22
+X 37 s-stalib.adb
+93U14 Break_Start 94i<c,__gnat_break_start>22
+

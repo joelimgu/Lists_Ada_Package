@@ -1,0 +1,57 @@
+V "GNAT Lib v2020"
+A -gnatA
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_IO
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U afficher_test%b	afficher_test.adb	ff8e7299 NE OO SU
+W ada%s			ada.ads			ada.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+Z system.concat_2%s	s-conca2.adb		s-conca2.ali
+
+U afficher_test%s	afficher_test.ads	33532e5a EE NE OO SU
+
+D ada.ads		20200819050644 76789da1 ada%s
+D a-except.ads		20200819050644 a7106115 ada.exceptions%s
+D a-ioexce.ads		20200819050644 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20200819050644 119b8fb3 ada.streams%s
+D a-tags.ads		20200819050644 edddc8f0 ada.tags%s
+D a-textio.ads		20200819050644 aef4d56d ada.text_io%s
+D a-unccon.ads		20200819050644 0e9b276f ada.unchecked_conversion%s
+D afficher_test.ads	20210210142516 33532e5a afficher_test%s
+D afficher_test.adb	20210210142516 622989ae afficher_test%b
+D interfac.ads		20200819050646 5ab55268 interfaces%s
+D i-cstrea.ads		20200819050646 e53d8b8e interfaces.c_streams%s
+D system.ads		20200819050648 32a08138 system%s
+D s-conca2.ads		20200819050646 02a0d7d0 system.concat_2%s
+D s-crtl.ads		20200819050646 0ebbdb71 system.crtl%s
+D s-exctab.ads		20200819050646 54135002 system.exception_table%s
+D s-ficobl.ads		20200819050646 078245e4 system.file_control_block%s
+D s-parame.ads		20200819050648 4752c4cb system.parameters%s
+D s-secsta.ads		20200819050648 9b3ab94b system.secondary_stack%s
+D s-soflin.ads		20200819050648 a7318a92 system.soft_links%s
+D s-stache.ads		20200819050648 a37c21ec system.stack_checking%s
+D s-stalib.ads		20200819050648 6b7a13f2 system.standard_library%s
+D s-stoele.ads		20200819050648 2dc34a04 system.storage_elements%s
+D s-traent.ads		20200819050648 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20200819050648 5ecf7212 system.unsigned_types%s
+D s-wchcon.ads		20200819050648 1b7d22d2 system.wch_con%s
+G a e
+G c Z s b [afficher_test standard 1 11 none]
+X 1 ada.ads
+16K9*Ada 20e8 9|1r6 5r4 6r4 7r4 8r4 9r4 10r4
+X 6 a-textio.ads
+57K13*Text_IO 727e16 9|1w10 5r8 6r8 7r8 8r8 9r8 10r8
+264U14*New_Line 9|5s16 10s16
+508U14*Put_Line 9|6s16 7s16 8s16 9s16
+X 8 afficher_test.ads
+1U11*Afficher_Test 1>25 1>36 1>49 9|3b11 11l5 11t18
+1a25 Txt_Appel{string} 9|3b25 7r25
+1a36 Txt_Attendu{string} 9|3b36 8r40
+1a49 Txt_Obtenu{string} 9|3b49 9r40
+

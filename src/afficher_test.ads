@@ -1,0 +1,1 @@
+procedure Afficher_Test(Txt_Appel, Txt_Attendu, Txt_Obtenu : in  string);

@@ -1,0 +1,21 @@
+[GENERATED OBJECT FILE]
+b__mon_application.o
+[PROJECT FILES]
+C:\Users\joeli\OneDrive\Documents_Me\Insa\2A\Algo\S2\TP2\tp2.gpr
+20210210142454 a12c1c14040286b145be72e344293b6f
+[BOUND OBJECT FILES]
+C:\Users\joeli\OneDrive\Documents_Me\Insa\2A\Algo\S2\TP2\obj\afficher_test.o
+C:\Users\joeli\OneDrive\Documents_Me\Insa\2A\Algo\S2\TP2\obj\listes_ordonnees_entiers.o
+C:\Users\joeli\OneDrive\Documents_Me\Insa\2A\Algo\S2\TP2\obj\mon_application.o
+[GENERATED SOURCE FILES]
+b__mon_application.ads
+b__mon_application.adb
+b__mon_application.ali
+[RESULTING OPTIONS]
+-LC:\Users\joeli\OneDrive\Documents_Me\Insa\2A\Algo\S2\TP2\obj\
+-LC:\Users\joeli\OneDrive\Documents_Me\Insa\2A\Algo\S2\TP2\obj\
+-LC:/gnat/2020/lib/gcc/x86_64-pc-mingw32/9.3.1/adalib/
+-static
+-static-libgcc
+C:/gnat/2020/lib/gcc/x86_64-pc-mingw32/9.3.1/adalib/libgnat.a
+-Wl,--stack=0x2000000
