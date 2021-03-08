@@ -36,8 +36,8 @@
    --removes only the first instance of the element in the list
       procedure Remove_Element(Self: in out List; Element: T_Data);
       
-      --removes the index on the list
-      procedure Remove_Index(Self: in out List; Index: Integer);
+      --removes the nth element on the list on the list
+      procedure Remove_Nth_Element(Self: in out List; Index: Integer);
       
       --deletes all the elements in teh list and frees the emmory
       procedure Empty(Self: in out List );

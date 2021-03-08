@@ -150,7 +150,7 @@ procedure Free is new Unchecked_Deallocation(Element,P_List);
 
 
    procedure Empty(Self: in out List) is
-   --empties all the list and frees the memory mostly used to instance in a list wich contains lists
+   --empties all the list and frees the memory mostly used to instance in a list which contains lists
    rec : P_List := null;
    aux : P_List := Self.First_Element;
    begin
@@ -164,7 +164,7 @@ procedure Free is new Unchecked_Deallocation(Element,P_List);
 
 
    function "+"(L,R : List) return List is
-      --appends the second list to the first and returns the hole list
+      --appends the second list to the first and returns the whole  list
       res: List := (First_Element => null);
       aux: P_List := L.First_Element;
       

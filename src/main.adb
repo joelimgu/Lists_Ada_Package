@@ -53,7 +53,7 @@ procedure Main is
    arr2 : Tab_Of_List_Type (1..0);
    L1: List := Create_List(arr);
    L2: List := L1 + L1;
-   Ln: List := Create_List(arr2); --null array
+   Ln: List := Create_List(arr2); --null list
 
 begin
    Test_List_Package(L1 => L1);
