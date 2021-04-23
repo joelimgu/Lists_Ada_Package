@@ -107,7 +107,7 @@ procedure Free is new Unchecked_Deallocation(Element,P_List);
    end Remove_Element;
    
 
-   procedure Remove_Index(Self: in out List; Index: Integer) is
+   procedure Remove_Nth_Element(Self: in out List; Index: Integer) is
       aux : P_List := Self.First_Element;
       rec : P_List := null;
    begin
@@ -130,7 +130,7 @@ procedure Free is new Unchecked_Deallocation(Element,P_List);
          Free(rec);
       end if;
          
-   end Remove_Index;
+   end Remove_Nth_Element;
 
    
    function get_pointer(Self: in List; Index: Integer) return P_List is
