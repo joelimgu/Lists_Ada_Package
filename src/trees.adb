@@ -4,23 +4,42 @@ with Lists;
 package body trees is 
 
 
-function Create_N_Bynary_Tree (Dim: Positive; Elements: Tab_Of_List_Type) return Tree is
-res: Tree;
-begin
-    null;
-end Create_N_Bynary_Tree;
 
-procedure Append (Self: in out Tree; El: T_Data) is
+function Create_Binary_Tree (Elements: Tab_Of_List_Type) return B_Tree is 
+T: B_Tree := (null, 0);
 begin
-    null;  
+    for i in 1..Elements'Length loop
+       T.Append (Elements(i));
+    end loop;
+    return T;
+end Create_Binary_Tree;
+
+procedure Append (Self: in out B_Tree; El: T_Data) is
+begin
+    Self.Root.all.Append(el);
 end Append;
 
-function Is_Empty (Self: in out Tree) return Boolean is
+
+procedure Append (Self: in out B_Node; El: T_Data) is
 begin
-    return Self.P = null;
+    if Self.Left = null then
+        Self.Left := new B_Node'(null, null, el);
+    elsif Self.Right = null then
+        Self.Right := new B_Node'(null, null, el);
+    elsif El < Self.Info then
+        Self.Left.Append (El);
+    elsif El > Self.Info then
+        Self.Right.Append (El);
+    end if;
+end Append;
+
+
+function Is_Empty (Self: in out B_Tree) return Boolean is
+begin 
+    return Self.Root = Null;
 end Is_Empty;
 
-    
+
     
     
 
