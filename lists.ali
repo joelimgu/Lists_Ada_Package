@@ -1,0 +1,180 @@
+V "GNAT Lib v9"
+P ZX
+
+RN
+RV NO_ALLOCATORS
+RV NO_DIRECT_BOOLEAN_OPERATORS
+RV NO_EXCEPTIONS
+RV NO_IO
+RV NO_LOCAL_ALLOCATORS
+RV NO_NESTED_FINALIZATION
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_UNCHECKED_DEALLOCATION
+RV NO_DEFAULT_INITIALIZATION
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV SPARK_05
+
+U lists%b		lists.adb		ae358292 NE OO PK GE IL
+W ada%s			ada.ads			ada.ali
+W ada.strings%s		a-string.ads		a-string.ali
+W ada.strings.unbounded%s  a-strunb.adb		a-strunb.ali
+W ada.strings.unbounded.text_io%s  a-suteio.adb	a-suteio.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W unchecked_deallocation%s
+
+U lists%s		lists.ads		45dcaa7c BN EE NE OO PK GE
+
+D ada.ads		20200312110721 76789da1 ada%s
+D a-charac.ads		20200312110721 2d3ec45b ada.characters%s
+D a-chlat1.ads		20200312110721 66457d31 ada.characters.latin_1%s
+D a-except.ads		20200312110721 291912d5 ada.exceptions%s
+D a-finali.ads		20200312110721 bf4f806b ada.finalization%s
+D a-ioexce.ads		20200312110721 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20200312110721 119b8fb3 ada.streams%s
+D a-string.ads		20200312110721 90ac6797 ada.strings%s
+D a-strmap.ads		20200312110721 e8bb714a ada.strings.maps%s
+D a-strunb.ads		20200312110721 8098c91f ada.strings.unbounded%s
+D a-suteio.ads		20200312110721 26d8e9aa ada.strings.unbounded.text_io%s
+D a-tags.ads		20200312110721 491b781d ada.tags%s
+D a-textio.ads		20200312110721 881db35a ada.text_io%s
+D a-unccon.ads		20200312110721 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		20200312110721 5ab55268 interfaces%s
+D i-cstrea.ads		20200312110721 e53d8b8e interfaces.c_streams%s
+D lists.ads		20210504211317 45dcaa7c lists%s
+D lists.adb		20210504212127 e4f1ada5 lists%b
+D system.ads		20200312110721 4635ec04 system%s
+D s-atocou.ads		20200312110721 b45c2d8d system.atomic_counters%s
+D s-crtl.ads		20200312110721 0ebbdb71 system.crtl%s
+D s-exctab.ads		20200312110721 54135002 system.exception_table%s
+D s-ficobl.ads		20200312110721 078245e4 system.file_control_block%s
+D s-finmas.ads		20200312110721 7811a767 system.finalization_masters%s
+D s-finroo.ads		20200312110721 4ff27390 system.finalization_root%s
+D s-parame.ads		20200312110721 48ec542b system.parameters%s
+D s-secsta.ads		20200312110721 20bbe636 system.secondary_stack%s
+D s-soflin.ads		20200312110721 a7318a92 system.soft_links%s
+D s-stache.ads		20200312110721 a37c21ec system.stack_checking%s
+D s-stalib.ads		20200312110721 09bd3940 system.standard_library%s
+D s-stoele.ads		20200312110721 2dc34a04 system.storage_elements%s
+D s-stopoo.ads		20200312110721 b16154c2 system.storage_pools%s
+D s-stposu.ads		20200312110721 97a6219c system.storage_pools.subpools%s
+D s-stratt.ads		20200312110721 aedef97e system.stream_attributes%s
+D s-traent.ads		20200312110721 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20200312110721 34867c83 system.unsigned_types%s
+D s-wchcon.ads		20200312110721 1b7d22d2 system.wch_con%s
+D unchdeal.ads		20200312110721 214516a4 unchecked_deallocation%s
+X 1 ada.ads
+16K9*Ada 20e8 18|1r6 1r23 2r6 2r33 3r6 3r41
+X 8 a-string.ads
+16K13*Strings 35e16 18|2r10 2r37 3r10 3r45
+X 10 a-strunb.ads
+76K21*Unbounded 491e26 18|2w18 2r45 3r18 3r53
+79R9*Unbounded_String<5|43R9> 474e14 18|62r12
+94V13*To_Unbounded_String{79R9} 18|65s14 68s26 71s23
+100V13*To_String{string} 18|75s14
+119V14*"&"{79R9} 18|68s24 71s21
+123V14*"&"{79R9} 18|74s18
+X 11 a-suteio.ads
+39K31*Text_IO 61e34 18|3w28 3r63
+X 13 a-textio.ads
+49K13*Text_IO 471e16 18|1w10 1r27
+X 17 lists.ads
+3+12 T_Data 4r37 5r30 6r44 13r60 19r48 25r57 28r47 34r67 37r60 56r13 18|21r46
+. 54r54 79r63 85r57 202r44
+4V21 Data_Image{string} 4>32 18|68s46 71s43
+4*32 Data{3+12}
+5V22 "="{boolean} 5>25 5>27 18|90s41 97r50 192s34 206r47
+5*25 L{3+12}
+5*27 R{3+12}
+6U22 Delete_Object 6>36 18|117s10 122s10 129s10 160s10
+6*36 Object{3+12}
+7k12*lists 3z12 4z21 5z22 6z22 53E9 65l5 65e10 18|7b14 218l5 218t10
+9X7*Element_not_in_the_list 18|89r16 211r16
+10X7*Get_Index_Value_Outside_the_list 18|115r16 140r16
+11X7*Get_Index_value_negative_not_implemented_yet 18|142r16
+12R12*List 16p16 16r63 19p17 19r36 22p16 22r31 25p16 25r28 28p16 28r31 31p16
+. 31r35 34p17 34r33 37p17 37r45 40p17 40r49 43p17 43r36 46p17 46r26 46r39
+. 49p17 49r26 60c9 62e14 64p13 64r34 18|11r60 12r10 21r34 39r28 54r25 60r32
+. 79r30 85r42 110r46 136r34 152r33 166r23 166r36 168r12 183r22 202r28
+13A12*Tab_Of_List_Type(3+12)<integer> 16r38 18|11r35
+16V16*Create_List{12R12} 16>28 18|11b13 18l8 18t19
+16a28 Elements{13A12} 18|11b25 14r16 15r19
+19U17*Append 19=24 19>42 18|15s12 21b14 36l8 36t14 173s14 177s14
+19r24 Self{12R12} 18|21b21 22r22 25m10
+19*42 Data{3+12} 18|21b40 25r53 32r46
+22V16*Length{natural} 22>23 18|39b13 51l8 51t14 114s37 120s26 139s23 157s24
+. 172s21 176s21 189s12 189s23
+22r23 Self{12R12} 18|39b20 41r22
+25V16*get{3+12} 25>20 25>34 18|54b13 57l8 57t11 173s23 177s23
+25r20 Self{12R12} 18|54b17 56r14
+25i34 Index{integer} 18|54b31 56r40
+28V16*Index{integer} 28>22 28>37 18|202b13 215l8 215t13
+28r22 Self{12R12} 18|202b19 203r22
+28*37 Element{3+12} 18|202b34 206r50
+31V16*Image{string} 31=22 18|60b13 76l8 76t13
+31r22 Self{12R12} 18|60b19 61r22
+34U17*Set 34=21 34>39 34>56 18|79b14 82l8 82t11
+34r21 Self{12R12} 18|79b18 81r7
+34i39 Index{integer} 18|79b36 81r33
+34*56 New_Value{3+12} 18|79b52 81r52
+37U17*Remove_Element 37=32 37>51 18|85b14 107l8 107t22
+37r32 Self{12R12} 18|85b29 88r10 90r13 91r16 92m10 92r32 95r16 96r15
+37*51 Element{3+12} 18|85b48 90r43 97r53
+40U17*Remove_Nth_Element 40=36 40>55 18|110b14 133l8 133t26
+40r36 Self{12R12} 18|110b33 111r23 114r32 118m10 120r21 121r17 126r17
+40i55 Index{integer} 18|110b52 114r24 116r13 120r13 121r43 126r34
+43U17*Empty 43=23 18|152b14 163l8 163t13
+43r23 Self{12R12} 18|152b20 155r20 157r19
+46V17*"+"{12R12} 46>21 46>23 18|166b14 180l9 180t11
+46r21 L{12R12} 18|166b17 169r22 172r19 173r21
+46r23 R{12R12} 18|166b19 176r19 177r21
+49V17*"="{boolean} 49>21 49>23 18|183b14 199l9 199t11
+49r21 L{12R12} 18|183b17 185r22 189r10
+49r23 R{12R12} 18|183b19 186r23 189r21
+53R9 Element 54r26 55c9 58e14 18|9r46 25r36 32r29
+54P9 P_List(53R9) 57r13 61r22 64r63 18|9r54 22r12 41r12 61r12 86r19 111r13
+. 112r13 136r63 137r10 154r10 155r10 169r12 185r12 186r13 203r12
+56*7 info{3+12} 18|25m45 32m38 56r51 68r65 71r62 81m44 90r36 97r45 117r32
+. 122r41 129r32 160r32 192r29 192r45 206r42
+57p7 suiv{54P9} 18|26m41 28r24 29r28 32m17 33m38 45r24 46r27 67r24 69r28
+. 92r55 96r38 99r27 103m21 103r36 118r40 122r32 123m23 124m18 127r25 128m18
+. 128r34 146r24 159r25 193r30 194r30 207r25
+61p7 First_Element{54P9} 18|12m19 22r27 25m15 41r27 61r27 88r15 90r18 91r21
+. 92m15 92r37 95r21 96r20 111r28 118m15 137r25 155r25 168m21 169r24 185r24
+. 186r25 203r27
+64V13 get_pointer{54P9} 64>25 64>40 18|56s19 81s12 121s22 126s22 136b13 149l8
+. 149t19
+64r25 Self{12R12} 18|136b25 137r20 139r18
+64i40 Index{integer} 18|56r31 81r24 121r34 136b40 139r10 141r13 145r19
+X 18 lists.adb
+9U11 Free[38|20] 93s10 104s13 119s10 123s10 130s10 161s10
+12r7 L{17|12R12} 15m10 15r10 17r14
+14i11 i{integer} 15r28
+22p7 aux{17|54P9} 24r10 28r16 29m13 29r20 32r9
+40i7 len{natural} 44m10 44r17 47m13 47r20 50r14
+41p7 aux{17|54P9} 43r10 45r16 46m13 46r19
+61p7 aux{17|54P9} 66r10 67r16 68r57 69m13 69r20 71r54
+62r7 img{10|79R9} 65m7 68m13 68r20 71m10 71r17 74m7 74r14 75r24
+63i7 index{integer}
+86p4 pre{17|54P9} 95m10 98m13 103r13
+86p9 aux{17|54P9} 96m10 97r16 97r37 98r19 99m13 99r19 101r13 102r20 103r28
+86p14 rec{17|54P9} 91m10 93m15 93r15 102m13 104m18 104r18
+111p7 aux{17|54P9} 114r10 117r24 118r32 119m15 119r15 121m10 122r24 123r15
+. 124r10 126m10 127r17 128r10
+112p7 rec{17|54P9} 127m10 128r26 129r24 130m15 130r15
+137p4 aux{17|54P9} 146m10 146r16 148r14
+145i11 i{integer}
+154p4 rec{17|54P9} 158m10 160r24 161m16 161r16
+155p4 aux{17|54P9} 158r17 159m10 159r17
+157i11 i{integer}
+168r7 res{17|12R12} 173m10 173r10 177m10 177r10 179r14
+169p7 aux{17|54P9}
+172i11 i{integer} 173r27
+176i11 i{integer} 177r27
+184b7 res{boolean} 190m10 191r16 192m13 198r14
+185p7 auxL{17|54P9} 191r24 192r20 193m13 193r21
+186p7 auxR{17|54P9} 192r36 194m13 194r21
+203p7 aux{17|54P9} 206r13 206r34 207m10 207r17 210r10
+204i7 Index{integer} 208m10 208r19 214r14
+X 38 unchdeal.ads
+20u11*Unchecked_Deallocation 18|4w6 9r23
+

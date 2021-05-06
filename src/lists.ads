@@ -56,7 +56,7 @@ private
       info: T_Data;
       suiv: P_List;
    end record;
-        
+   
    type List is tagged record
       First_Element: P_List;
    end record;

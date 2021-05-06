@@ -1,0 +1,84 @@
+V "GNAT Lib v9"
+P ZX
+
+RN
+RV NO_STANDARD_STORAGE_POOLS
+RV SPARK_05
+
+U trees%b		trees.adb		5dd23b00 NE OO PK GE IL
+W lists%s		lists.adb		lists.ali
+
+U trees%s		trees.ads		c81e004d BN EE NE OO PK GE
+W ada%s			ada.ads			ada.ali
+W ada.strings%s		a-string.ads		a-string.ali
+W ada.strings.unbounded%s  a-strunb.adb		a-strunb.ali
+Z ada.strings.unbounded.text_io%s  a-suteio.adb	a-suteio.ali
+Z ada.text_io%s		a-textio.adb		a-textio.ali
+W lists%s		lists.adb		lists.ali
+Z unchecked_deallocation%s
+
+D ada.ads		20200312110721 76789da1 ada%s
+D a-charac.ads		20200312110721 2d3ec45b ada.characters%s
+D a-chlat1.ads		20200312110721 66457d31 ada.characters.latin_1%s
+D a-except.ads		20200312110721 291912d5 ada.exceptions%s
+D a-finali.ads		20200312110721 bf4f806b ada.finalization%s
+D a-ioexce.ads		20200312110721 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20200312110721 119b8fb3 ada.streams%s
+D a-string.ads		20200312110721 90ac6797 ada.strings%s
+D a-strmap.ads		20200312110721 e8bb714a ada.strings.maps%s
+D a-strunb.ads		20200312110721 8098c91f ada.strings.unbounded%s
+D a-suteio.ads		20200312110721 26d8e9aa ada.strings.unbounded.text_io%s
+D a-tags.ads		20200312110721 491b781d ada.tags%s
+D a-textio.ads		20200312110721 881db35a ada.text_io%s
+D a-unccon.ads		20200312110721 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		20200312110721 5ab55268 interfaces%s
+D i-cstrea.ads		20200312110721 e53d8b8e interfaces.c_streams%s
+D lists.ads		20210504211317 45dcaa7c lists%s
+D lists.adb		20210504212127 e4f1ada5 lists%b
+D system.ads		20200312110721 4635ec04 system%s
+D s-atocou.ads		20200312110721 b45c2d8d system.atomic_counters%s
+D s-crtl.ads		20200312110721 0ebbdb71 system.crtl%s
+D s-exctab.ads		20200312110721 54135002 system.exception_table%s
+D s-ficobl.ads		20200312110721 078245e4 system.file_control_block%s
+D s-finmas.ads		20200312110721 7811a767 system.finalization_masters%s
+D s-finroo.ads		20200312110721 4ff27390 system.finalization_root%s
+D s-parame.ads		20200312110721 48ec542b system.parameters%s
+D s-secsta.ads		20200312110721 20bbe636 system.secondary_stack%s
+D s-soflin.ads		20200312110721 a7318a92 system.soft_links%s
+D s-stache.ads		20200312110721 a37c21ec system.stack_checking%s
+D s-stalib.ads		20200312110721 09bd3940 system.standard_library%s
+D s-stoele.ads		20200312110721 2dc34a04 system.storage_elements%s
+D s-stopoo.ads		20200312110721 b16154c2 system.storage_pools%s
+D s-stposu.ads		20200312110721 97a6219c system.storage_pools.subpools%s
+D s-stratt.ads		20200312110721 aedef97e system.stream_attributes%s
+D s-traent.ads		20200312110721 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20200312110721 34867c83 system.unsigned_types%s
+D s-wchcon.ads		20200312110721 1b7d22d2 system.wch_con%s
+D trees.ads		20210506155451 8dc2aa31 trees%s
+D trees.adb		20210506155450 95cc3b4d trees%b
+D unchdeal.ads		20200312110721 214516a4 unchecked_deallocation%s
+X 17 lists.ads
+7k12*lists 65e10 38|1w6 33r21 39|1w6
+12R12 List 38|36r18[33]
+X 38 trees.ads
+4+10 T_Data 6r28 7r42 12r54 37r11
+6V20 "="{boolean} 6>23 6>25
+6*23 L{4+10}
+6*25 R{4+10}
+7U20 Delete_Object 7>34
+7*34 Object{4+10}
+9k9*trees 4z10 6z20 7z20 17E6 41l5 41e10 39|4b14 26l5 26t10
+11R6*Tree 22c6 24e11
+12A6*Tab_Of_List_Type(4+10)<integer>
+17R6 Node 18r23 35c6 39e11
+18P6 P_Node(17R6) 23r11 27r31 30r29 33r27 38r13 39|14r31 19r29
+23p5 Root{18P6}
+27V10 P_Node_To_String{string} 27>28 33r34 39|14b10 17l5 17t21
+27p28 N{18P6} 39|14b28
+30U11 Delete_P_Node 30>26 33r55 39|19b11 22l5 22t18
+30p26 N{18P6} 39|19b26
+33K9 List[17|7] 36r13
+36r5 childs{17|12R12[33]}
+37*5 info{4+10}
+38p5 parent{18P6}
+

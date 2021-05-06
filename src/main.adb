@@ -1,5 +1,6 @@
 with Lists;
 with Ada.Text_IO; use Ada.Text_IO;
+with Trees;
 
 procedure Main is
    procedure del_int(obj: Integer) is
@@ -44,7 +45,7 @@ procedure Main is
       Put_Line("After remooving element 4: " & L1.Image);
       L1 := L1 + L1;
       Put_Line("After L1=L1+L1: " & L1.Image);
-      L1.Remove_Index(3);
+      L1.Remove_Nth_Element(3);
       Put_Line("After deleting 3rd: " & L1.Image);
    end Test_List_Package;
 
