@@ -10,7 +10,7 @@ I know there are incredibly inefficient parts of the code, I mainly wanted it to
 # How to use:
 First, we need to create an instance of the package and we need to pass the object type, an image function for that object, an equality function and finally a delete function.
 
-```
+```ada
 package Integer_List is new lists(type,Image,equality,delete);
 ```
 
@@ -19,7 +19,7 @@ For the delete procedure, if it's a primary type, you should pass a null functio
 <br/>
 <br/>
 To create a list you define an array with the initial values of type __Tab_Of_List_Type__:
-```
+```ada
 arr : Tab_Of_List_Type (1..5) := (1,2,3,4,5);
 ```
 And then we call the Create_List(arr); a function that returns a list object with the values on the array.  
@@ -31,7 +31,7 @@ L1: List := Create_List(arr);
 <br/>
 The available methods are:  
 
-```  
+```  ada
   --Exceptions:  
    Element_not_in_the_list : exception;  
    Get_Index_Value_Outside_the_list : exception;  
@@ -82,7 +82,7 @@ The available methods are:
  
  # Examples:  
  Create and use and integer list:
- ```
+ ```ada
 with Lists;
 with Ada.Text_IO; use Ada.Text_IO;
 
