@@ -22,16 +22,31 @@ end Append;
 
 procedure Append (Self: in out B_Node; El: T_Data) is
 begin
-    if Self.Left = null then
-        Self.Left := new B_Node'(null, null, el);
-    elsif Self.Right = null then
-        Self.Right := new B_Node'(null, null, el);
+    if Self = null then
+        Self.Info := new B_Node'(null, null, el);
+    elsif Self.Info = El then
+        null;
     elsif El < Self.Info then
         Self.Left.Append (El);
     elsif El > Self.Info then
         Self.Right.Append (El);
     end if;
+
+    
 end Append;
+
+
+procedure Update (Self: in out B_Tree) is 
+begin
+    Self.Root.Update;
+end Update;
+
+
+
+procedure Update (Self: in out B_Node) is
+begin
+    null;
+end Update;
 
 
 function Is_Empty (Self: in out B_Tree) return Boolean is

@@ -1,4 +1,8 @@
 with Lists;
+with Ada.Strings.Unbounded; use Ada.Strings.Unbounded;
+with Ada.Strings.Unbounded.Text_IO; use Ada.Strings.Unbounded.Text_IO; 
+with Unchecked_Deallocation;
+
 
 generic
     type T_Data is private;
@@ -66,6 +70,9 @@ function P_Node_To_String (N: P_Node) return String;
 
 
 procedure Delete_P_Node (N: P_Node);
+
+function To_String (Self: B_Tree) return String;
+
 
 --Useless for my couse, I'll just do binary trees for now, maybie one day
 package List is new Lists(P_Node,P_Node_To_String,"=",Delete_P_Node);
