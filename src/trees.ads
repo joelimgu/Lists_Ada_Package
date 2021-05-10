@@ -10,7 +10,7 @@ generic
     with function "="(L,R: T_Data) return Boolean;
     with procedure Delete_Object(Object: T_Data);
     with function "<" (L,R: T_Data) return Boolean;
-    with function ">" (L,R: T_Data) return Boolean;
+    --with function ">" (L,R: T_Data) return Boolean;
 
 
 package trees is
