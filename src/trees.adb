@@ -8,11 +8,13 @@ package body trees is
 function Create_Binary_Tree (Elements: Tab_Of_List_Type) return B_Tree is 
 T: B_Tree := (null, 0);
 begin
+    --Append all the elements in the table
     for i in 1..Elements'Length loop
        T.Append (Elements(i));
     end loop;
     return T;
 end Create_Binary_Tree;
+
 
 procedure Append (Self: in out B_Tree; El: T_Data) is
 begin
