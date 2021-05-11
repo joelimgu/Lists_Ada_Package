@@ -11,6 +11,7 @@ procedure Main is
    package Integer_List is new lists(Integer,Integer'Image,"=",del_int);
    use Integer_List;
 
+ 
 
    procedure Test_List_Package(L1:in out List) is
    begin
@@ -50,13 +51,26 @@ procedure Main is
    end Test_List_Package;
 
 
-   arr : Tab_Of_List_Type (1..5) := (1,2,3,4,5);
+     package Integer_Tree is new Trees
+      (Integer,
+      Integer'Image,
+      "=",
+      del_int,
+      "<",
+      ">");
+
+   arr : Tab_Of_List_Type (1..12) := (1,2,3,4,5,6,7,8,9,10,11,12);
    arr2 : Tab_Of_List_Type (1..0);
+   arr3 : Integer_Tree.Tab_Of_List_Type(1..12) := (1,2,3,4,5,6,7,8,9,10,11,12);
    L1: List := Create_List(arr);
    L2: List := L1 + L1;
    Ln: List := Create_List(arr2); --null list
 
+   T1: Integer_Tree.B_Tree := Integer_Tree.Create_Binary_Tree(arr3);
+
 begin
-   Test_List_Package(L1 => L1);
-   Test_List_Package(L1 => Ln);
+   --Test_List_Package(L1 => L1);
+   --Test_List_Package(L1 => Ln);
+   T1.Print;
+   Put_Line (Integer'Image(T1.Heigh));
 end Main;

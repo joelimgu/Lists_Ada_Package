@@ -3,23 +3,28 @@ P ZX
 
 RN
 RV NO_ALLOCATORS
+RV NO_DIRECT_BOOLEAN_OPERATORS
+RV NO_IO
 RV NO_LOCAL_ALLOCATORS
 RV NO_RECURSION
 RV NO_STANDARD_STORAGE_POOLS
+RV NO_UNCHECKED_DEALLOCATION
 RV NO_DYNAMIC_SIZED_OBJECTS
 RV SPARK_05
 
-U trees%b		trees.adb		3b4d772e NE OO PK GE IL
+U trees%b		trees.adb		2355f2f6 NE OO PK GE IL
+W ada%s			ada.ads			ada.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
 W lists%s		lists.adb		lists.ali
 
-U trees%s		trees.ads		0118822c BN EE NE OO PK GE
+U trees%s		trees.ads		afc5d5d1 BN EE NE OO PK GE
 W ada%s			ada.ads			ada.ali
 W ada.strings%s		a-string.ads		a-string.ali
 W ada.strings.unbounded%s  a-strunb.adb		a-strunb.ali
-Z ada.strings.unbounded.text_io%s  a-suteio.adb	a-suteio.ali
+W ada.strings.unbounded.text_io%s  a-suteio.adb	a-suteio.ali
 Z ada.text_io%s		a-textio.adb		a-textio.ali
 W lists%s		lists.adb		lists.ali
-Z unchecked_deallocation%s
+W unchecked_deallocation%s
 
 D ada.ads		20200312110721 76789da1 ada%s
 D a-charac.ads		20200312110721 2d3ec45b ada.characters%s
@@ -58,64 +63,102 @@ D s-stratt.ads		20200312110721 aedef97e system.stream_attributes%s
 D s-traent.ads		20200312110721 005bf670 system.traceback_entries%s
 D s-unstyp.ads		20200312110721 34867c83 system.unsigned_types%s
 D s-wchcon.ads		20200312110721 1b7d22d2 system.wch_con%s
-D trees.ads		20210506165752 44c42850 trees%s
-D trees.adb		20210506165940 3a55f502 trees%b
+D trees.ads		20210511201301 6d1c49bc trees%s
+D trees.adb		20210511201231 8388a26c trees%b
 D unchdeal.ads		20200312110721 214516a4 unchecked_deallocation%s
+X 1 ada.ads
+16K9*Ada 20e8 38|2r6 2r33 3r6 3r41 39|2r6 2r23
+X 8 a-string.ads
+16K13*Strings 35e16 38|2r10 2r37 3r10 3r45
+X 10 a-strunb.ads
+76K21*Unbounded 491e26 38|2w18 2r45 3r18 3r53
+X 11 a-suteio.ads
+39K31*Text_IO 61e34 38|3w28 3r63
+X 13 a-textio.ads
+49K13*Text_IO 471e16 39|2w10 2r27
+263U14*Put_Line 39|81s9
 X 17 lists.ads
-7k12*lists 65e10 38|1w6 71r21 39|1w6
-12R12 List 38|74r18[71]
+7k12*lists 65e10 38|1w6 93r21 39|1w6
+12R12 List 38|96r18[93]
 X 38 trees.ads
-4+10 T_Data 5r35 6r28 7r42 8r29 9r29 16r54 27r44 46r11 62r44 75r11 39|17r44
-. 23r44
-5V19 Data_Image{string} 5>30
-5*30 Data{4+10}
-6V20 "="{boolean} 6>23 6>25
-6*23 L{4+10}
-6*25 R{4+10}
-7U20 Delete_Object 7>34
-7*34 Object{4+10}
-8V20 "<"{boolean} 8>24 8>26 39|29s14
-8*24 L{4+10}
-8*26 R{4+10}
-9V20 ">"{boolean} 9>24 9>26 39|31s14
-9*24 L{4+10}
-9*26 R{4+10}
-12k9*trees 4z10 5z19 6z20 7z20 8z20 9z20 38E6 79l5 79e10 39|4b14 60l5 60t10
-14R6*N_Tree 50c6 53e11
-15R6*B_Tree 25p10 25r65 27p11 27r32 29p10 29r33 55c6 58e11 39|8r65 9r4 17r32
-. 37r33
-16A6*Tab_Of_List_Type(4+10)<integer> 25r40 39|8r40
-25V10*Create_Binary_Tree{15R6} 25>30 39|8b10 15l5 15t23
-25a30 Elements{16A6} 39|8b30 11r17 12r18
-27U11*Append 27=19 27>40 39|12s10 17b11 20l5 20t11
-27r19 Self{15R6} 39|17b19 19r5
-27*40 El{4+10} 39|17b40 19r26
-29V10*Is_Empty{boolean} 29=20 39|37b10 40l5 40t13
-29r20 Self{15R6} 39|37b20 39r12
-38R6 Node 39r23 73c6 77e11
-39P6 P_Node(38R6) 51r11 65r31 68r29 71r27 76r13 39|48r31 53r29
-41R6 B_Node 42r25 43c6 47e11 62r32 39|23r32 26r26 28r27
-42P6 P_B_Node(41R6) 44r11 45r12 56r11
-43R6 B_Node
-44p5 Left{42P6} 39|25r13 26m14 30r13 30r14
-45p5 Right{42P6} 39|27r16 28m14 32r13 32r14
-46*5 Info{4+10} 39|29r21 31r21
-51p5 Root{39P6}
-52i5 Heigh{integer}
-56p5 Root{42P6} 39|19r10 39r17
-57i5 Heigh{integer}
-62U11 Append 62=19 62>40 39|19s19 23b11 30s19 32s20 34l5 34t11
-62r19 Self{43R6} 39|23b19 25r8 26m9 27r11 28m9 29r16 30r9 31r16 32r9
-62*40 El{4+10} 39|23b40 26r46 28r47 29r11 30r27 31r11 32r28
-65V10 P_Node_To_String{string} 65>28 71r34 39|48b10 51l5 51t21
-65p28 N{39P6} 39|48b28
-68U11 Delete_P_Node 68>26 71r55 39|53b11 56l5 56t18
-68p26 N{39P6} 39|53b26
-71K9 List[17|7] 74r13
-74r5 childs{17|12R12[71]}
-75*5 info{4+10}
-76p5 parent{39P6}
+8+10 T_Data 9r35 10r28 11r42 12r29 13r29 19r54 30r44 56r11 72r44 97r11 39|19r44
+. 29r44
+9V19 Data_Image{string} 9>30 39|81s27
+9*30 Data{8+10}
+10V20 "="{boolean} 10>23 10>25 39|31s18
+10*23 L{8+10}
+10*25 R{8+10}
+11U20 Delete_Object 11>34
+11*34 Object{8+10}
+12V20 "<"{boolean} 12>24 12>26 39|33s14
+12*24 L{8+10}
+12*26 R{8+10}
+13V20 ">"{boolean} 13>24 13>26 39|40s14
+13*24 L{8+10}
+13*26 R{8+10}
+15k9*trees 8z10 9z19 10z20 11z20 12z20 13z20 48E6 101l5 101e10 39|4b14 162l5
+. 162t10
+17R6*N_Tree 60c6 63e11
+18R6*B_Tree 28p10 28r65 30p11 30r32 32p10 32r33 34p11 34r32 36p11 36r29 38p10
+. 38r30 65c6 68e11 39|8r65 9r4 19r32 51r32 63r33 69r29 87r34
+19A6*Tab_Of_List_Type(8+10)<integer> 28r40 39|8r40
+28V10*Create_Binary_Tree{18R6} 28>30 39|8b10 16l5 16t23
+28a30 Elements{19A6} 39|8b30 12r17 13r18
+30U11*Append 30=19 30>40 39|13s10 19b11 26l5 26t11
+30r19 Self{18R6} 39|19b19 21r8 22m9 24r9
+30*40 El{8+10} 39|19b40 22r44 24r30
+32V10*Is_Empty{boolean} 32=20 39|63b10 66l5 66t13
+32r20 Self{18R6} 39|63b20 65r12
+34U11*Update 34=19 39|51b11 54l5 54t11
+34r19 Self{18R6} 39|51b19 53r5
+36U11*Print 36=17 39|69b11 72l5 72t10
+36r17 Self{18R6} 39|69b17 71r5
+38V10*Heigh{integer} 38=17 39|87b14 90l9 90t14
+38r17 Self{18R6} 39|87b21 89r16
+48R6 Node 49r23 95c6 99e11
+49P6 P_Node(48R6) 61r11 74r31 76r29 93r27 98r13 39|150r31 155r29
+51R6 B_Node 52r25 53c6 57e11 72r32 80r32 82r23 84r30 86r27 39|22r26 29r32
+. 35r30 42r31 57r32 76r23 93r34 106r31 122r37
+52P6 P_B_Node(51R6) 54r11 55r12 66r11
+53R6 B_Node
+54p5 Left{52P6} 39|34r17 35m18 37r18 82r17 83r18 95r17 97r20 100r25 102r37
+. 109r39 112r25 112r26 113r21 116r42 116r43 125r20 125r21
+55p5 Right{52P6} 39|41r17 42m18 44r18 78r17 79r18 95r38 98r24 99r20 102r58
+. 109r17 111r20 114r23 114r24 116r23 116r24 134r20 134r21
+56*5 Info{8+10} 39|31r13 33r21 40r21 81r43
+61p5 Root{49P6}
+62i5 Heigh{integer}
+66p5 Root{52P6} 39|21r13 22m14 24r14 53r9 53r10 65r17 71r10 89r21
+67i5 Heigh{integer}
+72U11 Append 72=19 72>40 39|24s23 29b11 37s27 44s28 48l5 48t11
+72r19 Self{53R6} 39|29b19 31r8 33r16 34r12 35m13 37r13 40r16 41r12 42m13
+. 44r13
+72*40 El{8+10} 39|29b40 31r20 33r11 35r49 37r35 40r11 42r50 44r36
+74V10 P_Node_To_String{string} 74>28 93r34 39|150b10 153l5 153t21
+74p28 N{49P6} 39|150b28
+76U11 Delete_P_Node 76>26 93r55 39|155b11 158l5 158t18
+76p26 N{49P6} 39|155b26
+80U11 Update 80=19 39|53s15 57b11 60l5 60t11
+80r19 Self{53R6} 39|57b19
+82U11 Print 82>17 82>31 39|71s19 76b11 79s28 83s27 85l9 85t14
+82r17 Self{53R6} 39|76b17 78r12 79r13 81r38 82r12 83r13
+82a31 Margin{string} 39|76b31 79r34 81r18 83r33
+84V10 Heigh{integer} 84=17 39|89s30 93b14 98s34 100s34 102s46 102s68 104l9
+. 104t14 112s31 114s30 116s30 116s48
+84r17 Self{53R6} 39|93b21 95r12 95r33 97r15 98r19 99r15 100r20 102r32 102r53
+86V10 bf{integer} 86=14 39|106b14 120l9 120t11 124s17 125s26 133s20 134s27
+86r14 Self{53R6} 39|106b18 109r12 109r34 111r15 112r21 113r16 114r19 116r19
+. 116r38
+93K9 List[17|7] 96r13
+96r5 childs{17|12R12[93]}
+97*5 info{8+10}
+98p5 parent{49P6}
 X 39 trees.adb
-9r1 T{38|15R6} 12m8 12r8 14r12
-11i9 i{integer} 12r27
+9r1 T{38|18R6} 13m8 13r8 15r12
+12i9 i{integer} 13r27
+107i5 bf{integer} 110m13 112m13 114m13 116m13 119r16
+122U15 Balance 122b15 122=24 142l9 142t16
+122r24 Self{38|53R6} 124m12 124r12 125r16 133m15 133r15 134r16
+X 40 unchdeal.ads
+20u11*Unchecked_Deallocation 38|4w6
 

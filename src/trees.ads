@@ -10,8 +10,7 @@ generic
     with function "="(L,R: T_Data) return Boolean;
     with procedure Delete_Object(Object: T_Data);
     with function "<" (L,R: T_Data) return Boolean;
-    --with function ">" (L,R: T_Data) return Boolean;
-
+    with function ">" (L,R: T_Data) return Boolean;
 
 package trees is
 
@@ -31,6 +30,13 @@ function Create_Binary_Tree (Elements: Tab_Of_List_Type) return B_Tree;
 procedure Append (Self: in out B_Tree; El: T_Data);
 
 function Is_Empty (Self: in out B_Tree) return Boolean;
+
+procedure Update (Self: in out B_Tree);
+
+procedure Print(Self:in out B_Tree);
+
+function Heigh (Self: in out B_Tree) return Integer;
+
 
 
 
@@ -65,13 +71,22 @@ end record;
 
 procedure Append (Self: in out B_Node; El: T_Data);
 
-
 function P_Node_To_String (N: P_Node) return String;
-
 
 procedure Delete_P_Node (N: P_Node);
 
-function To_String (Self: B_Tree) return String;
+--function To_String (Self: B_Tree) return String;
+
+procedure Update (Self: in out B_Node);
+
+procedure Print(Self: B_Node; Margin: in String := "");
+
+function Heigh (Self: in out B_Node) return Integer;
+
+function bf (Self: in out B_Node) return Integer;
+
+
+
 
 
 --Useless for my couse, I'll just do binary trees for now, maybie one day
